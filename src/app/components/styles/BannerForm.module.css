@@ -1,0 +1,359 @@
+.verticalContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer {
+    display: flex;
+    gap: 1.0625vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textEditorContainer {
+    display: flex;
+    gap: 1.0625vw;
+    flex-wrap: wrap;
+    margin-top: 1.0625vw;
+    width: 100%;
+}
+
+.form {
+    background: var(--secondary-bg);
+    padding: 1.7500000000000002vw 1.25vw 1.375vw 1.125vw;
+    width: 43vw;
+
+    border-radius: .5vw;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.addProductClass {
+    width: 19.9375vw;
+    height: 8.3125vw;
+}
+
+.formGroup {
+    margin-bottom: 1.0625vw;
+}
+
+.label {
+    display: block;
+    margin-bottom: 1.0625vw;
+    color: var(--label-color);
+    font-size: 0.8750000000000001vw;
+}
+
+.input {
+    width: 100%;
+    height: 2.125vw;
+    padding: 0.8125vw 0 0.75vw 1.25vw;
+    background: transparent;
+    border: 0.0625vw solid var(--border-color);
+    color: rgba(255, 255, 255, .8);
+    font-size: 0.8750000000000001vw;
+    border-radius: var(--primary-border-radius);
+}
+
+.input::placeholder {
+    color: var(--primary-placeholde-color);
+    font-size: 0.8750000000000001vw;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-border-input);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #131217 inset !important;
+    -webkit-text-fill-color: #fff;
+}
+
+.addProductInputs {
+    display: flex;
+    gap: 1.0625vw;
+}
+
+.mediaButtons {
+    display: flex;
+    gap: 1.25vw;
+    width: 100%;
+    /* margin-top: 2.625vw; */
+}
+
+.formGroupVideoUrl {
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.mediaButton {
+    background: var(--lite-white-menu-sider-active);
+    /* border: 0.0625vw solid var(--border-color); */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4.425vw;
+    height: 3.75vw;
+    min-width: 4.425vw;
+    min-height: 3.75vw;
+    border-radius: var(--primary-border-radius);
+}
+
+.mediaButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-0.1vw);
+}
+
+.reactIcon {
+    width: 1.172vw;
+    height: 1.172vw;
+    color: var(--label-color);
+}
+
+.reactIconPdf {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.reactIcon:last-child {
+    width: 1.172vw;
+    height: 1.172vw;
+    color: var(--label-color);
+}
+
+
+.itemLeft .checkbox,
+.headerLeft .checkbox {
+    width: 1vw;
+    height: 1vw;
+    border: 0.0625vw solid var(--label-color);
+    background: var(--secondary-bg);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.1875vw;
+    z-index: 9999;
+}
+
+.checkbox:checked {
+    background-color: var(--secondary-bg);
+    border-color: var(--label-color);
+}
+
+.addProjectPicker {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0625vw;
+    width: 19.2vw;
+}
+
+.imagePreview {
+    width: 4.425vw;
+    height: 3.75vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* .checkbox:checked::after {
+    content: '✓';
+    color: white;
+    font-size: 0.75vw;
+} */
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.pdfWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4.425vw;
+    height: 3.75vw;
+    background: var(--label-color);
+    cursor: pointer;
+    border-radius: var(--primary-border-radius);
+}
+
+.imagePreview {
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 0.3125vw;
+    right: 0.3125vw;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 1.2vw;
+    height: 1.2vw;
+    font-size: 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: var(--font-size-primary);
+}
+
+.imageWrapper:hover .deleteButton {
+    opacity: 1;
+}
+
+.pdfWrapper:hover .deleteButton{
+    opacity: 1;
+}
+
+.borders {
+    border: 1px solid var(--border-color);
+    padding: 1vw;
+    margin-bottom: 2vw;
+}
+
+.itemValues {
+    border: 1px solid var(--border-color);
+    padding: 1vw;
+
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+    justify-content: space-between;
+    border-radius: var(--primary-border-radius);
+}
+
+.itemValues .formGroup {
+    width: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: .5vw;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.button {
+    background: var(--primary-button-color);
+    color: white;
+    border: none;
+    padding: 0.8125vw 1.7500000000000002vw;
+    cursor: pointer;
+    font-size: 0.8750000000000001vw;
+}
+
+
+@media (max-width: 767px) {
+    .formContainer {
+        gap: 1.6vw;
+    }
+
+    .textEditorContainer {
+        gap: 1.6vw;
+        margin-top: 1.6vw;
+    }
+
+    .form {
+        padding: 2.8vw 2vw 2.3vw 2vw;
+        width: 54.1vw;
+    }
+
+    .addProductClass {
+        width: 26.6vw;
+        height: 11vw;
+    }
+
+    .formGroup {
+        margin-bottom: 1.6vw;
+    }
+
+    .label {
+        font-size: 1.4vw;
+    }
+
+    .input {
+        height: 2.7vw;
+        padding: 1.1vw 0 1vw 1.6vw;
+        font-size: 1.4vw;
+    }
+
+    .input::placeholder {
+        font-size: 1.4vw;
+    }
+
+    .mediaButtons {
+        gap: 1.7vw;
+    }
+
+    .mediaButton {
+        width: 5.8vw;
+        height: 5vw;
+        min-width: 5.8vw;
+        min-height: 5vw;
+    }
+
+    .reactIcon {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .itemLeft .checkbox,
+    .headerLeft .checkbox {
+        width: 1.3vw;
+        height: 1.3vw;
+        border: 0.1vw solid var(--label-color);
+        border-radius: 0.2vw;
+    }
+
+    .addProjectPicker {
+        width: 25vw;
+    }
+
+    .imagePreview {
+        width: 5.8vw;
+        height: 5vw;
+    }
+
+    .deleteButton {
+        width: 3.5vw;
+        height: 3.5vw;
+        font-size: 1.8vw;
+    }
+
+    .borders {
+        padding: 1.3vw;
+        margin-bottom: 2.6vw;
+    }
+
+    .itemValues {
+        gap: 1.3vw;
+    }
+
+    .buttonContainer {
+        gap: 0.7vw;
+    }
+
+    .button {
+        padding: 1.1vw 2.4vw;
+        font-size: 1.4vw;
+    }
+}

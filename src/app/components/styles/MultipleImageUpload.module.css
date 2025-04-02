@@ -1,0 +1,132 @@
+.container {
+    width: 100%;
+    /* background: var(--secondary-bg, #0A1628); */
+    color: var(--label-color);
+    height: max-content;
+    display: flex;
+    gap: 1.0625vw;
+}
+
+.formGroup {
+    background-color: var(--secondary-bg);
+    width: 50%;
+    padding: 1.7500000000000002vw 1.25vw 2.75vw 1.5vw;
+    height: 8.3125vw;
+    border-radius: var(--primary-border-radius);
+
+}
+
+.label {
+    display: block;
+    margin-bottom: 1.0625vw;
+    color: var(--label-color);
+    font-size: var(--font-size-primary);
+}
+
+.input {
+    width: 100%;
+    height: 2.125vw;
+    padding: 0.8125vw 0 0.75vw 1.25vw;
+    background: transparent;
+    border: 0.0625vw solid var(--border-color);
+    color: rgba(255, 255, 255, .8);
+    font-size: var(--font-size-primary);
+    border-radius: var(--primary-border-radius);
+}
+
+.input::placeholder {
+    color: var(--primary-placeholde-color);
+    font-size: var(--font-size-primary);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-border-input);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #131217 inset !important;
+    -webkit-text-fill-color: #fff;
+}
+
+.drawings {
+    background-color: var(--secondary-bg);
+    width: 50%;
+    padding: 0 1.25vw 0 1.5vw;
+    height: 8.3125vw;
+    border-radius: var(--primary-border-radius);
+
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.drawings label {
+    margin-bottom: 1.0625vw;
+}
+
+.mediaButton {
+    background: var(--lite-white-menu-sider-active);
+    border: 0.0625vw solid var(--border-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4.425vw;
+    height: 3.75vw;
+    min-width: 4.425vw;
+    min-height: 3.75vw;
+    border-radius: .5vw;
+}
+
+.mediaButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-0.1vw);
+}
+
+.reactIcon {
+    width: 1.172vw;
+    height: 1.172vw;
+    color: var(--label-color);
+}
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 2vw;
+}
+
+.imagePreview {
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+    width: 4.425vw;
+    height: 3.75vw;
+    cursor: pointer;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 0.3125vw;
+    right: 0.3125vw;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vw;
+    font-size: 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imageWrapper:hover .deleteButton {
+    opacity: 1;
+}

@@ -1,0 +1,422 @@
+.container {
+    background-color: var(--secondary-bg);
+    padding-top: 1.7500000000000002vw;
+    padding-bottom: 2.5vw;
+    width: 43vw;
+    max-width: 43.75vw;
+
+    border-radius: .5vw;
+}
+
+.width1000 {
+    width: 62.5vw;
+    max-width: 63.75vw;
+
+}
+
+.container h2 {
+    font-size: var(--font-size-primary);
+    border-bottom: 0.0625vw solid var(--border-color);
+    padding: 0 1.25vw 1.0625vw 1.125vw;
+    margin-bottom: 1.0625vw;
+    font-weight: 500;
+    color: var(--label-color);
+}
+
+.formGroup {
+    padding: 0 1.25vw 0 1.125vw;
+    margin-bottom: 1.0625vw;
+}
+
+.label {
+    display: block;
+    margin-bottom: 1.0625vw;
+    color: var(--label-color);
+    font-size: var(--font-size-primary);
+}
+
+.input {
+    width: 100%;
+    height: 2.125vw;
+    padding-left: 1.25vw;
+    background: transparent;
+    border: 0.0625vw solid var(--border-color);
+    color: rgba(255, 255, 255, .8);
+    font-size: var(--font-size-primary);
+    border-radius: var(--primary-border-radius);
+}
+
+.input::placeholder {
+    color: var(--primary-placeholde-color);
+    font-size: var(--font-size-primary);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-border-input);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-border-input);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #131217 inset !important;
+    -webkit-text-fill-color: #fff;
+}
+
+.dateGroup {
+    margin-right: 1.125vw;
+}
+
+.container input[type="date"]::-webkit-calendar-picker-indicator {
+    color: var(--primary-placeholde-color);
+    background-color: var(--primary-placeholde-color);
+    cursor: pointer;
+    margin-right: 0.8750000000000001vw;
+}
+
+.container input[type="date"] {
+    all: unset;
+    color: var(--label-color);
+    display: block;
+    width: 100%;
+    border: 0.0625vw solid var(--border-color);
+    padding: 0.8125vw 0 0.75vw 0.8750000000000001vw;
+    border-radius: var(--primary-border-radius);
+    font-size: 0.8125vw;
+}
+
+.editorContainer {
+    overflow: hidden;
+    padding: 0 1.25vw 0 1.125vw;
+    margin-bottom: 1.0625vw;
+    background-color: transparent;
+}
+
+.editor :global(.ql-toolbar.ql-snow) {
+    border: none;
+    background: var(--lite-white-menu-sider-active);
+    border-top-left-radius: var(--primary-border-radius);
+    border-top-right-radius: var(--primary-border-radius);
+    border: 0.0625vw solid var(--primary-border-input);
+
+}
+
+.editor :global(.ql-toolbar button) {
+    color: #ffffff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.editor :global(.ql-toolbar button:hover) {
+    background: var(--hover-secondary);
+    color: #ffffff;
+}
+
+.editor :global(.ql-container.ql-snow) {
+    border: 0.0625vw solid var(--primary-border-input);
+    background: var(--secondary-bg);
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+    min-height: 12.5vw;
+    max-height: 22vw;
+    height: 22vw;
+    border-bottom-left-radius: var(--primary-border-radius);
+    border-bottom-right-radius: var(--primary-border-radius);
+}
+
+.editor :global(.ql-editor) {
+    color: #ffffff;
+    min-height: 12.5vw;
+}
+
+.editor :global(.ql-editor::placeholder) {
+    color: rgba(255, 255, 255, 0.5);
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.editor :global(.ql-stroke) {
+    stroke: #ffffff;
+    border: 0.0625vw solid var(--primary-border-input);
+}
+
+.editor :global(.ql-fill) {
+    fill: #ffffff;
+}
+
+.editor :global(.ql-picker-label) {
+    color: #ffffff;
+    border: 0.0625vw solid var(--primary-border-input);
+    font-size: var(--font-size-primary);
+}
+
+.editor :global(.ql-picker-options) {
+    background: #1a2c4e;
+    color: #ffffff;
+    border: 0.0625vw solid var(--primary-border-input);
+}
+
+.editor :global(.ql-snow .ql-picker-label) {
+    border: 0.0625vw solid var(--border-color);
+    margin-right: .5vw;
+    margin-bottom: 1vw;
+    height: 1.7500000000000002vw;
+    width: 6.125vw;
+    padding: 0.1875vw 0.3125vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.editor :global(.ql-snow .ql-picker.ql-header) {
+    width: 6.125vw;
+}
+
+.editor :global(.ql-align .ql-picker-label) {
+    width: max-content;
+}
+
+.editor :global(.ql-editor p) {
+    font-size: var(--font-size-primary);
+}
+
+.editor :global(.ql-snow .ql-picker-label svg) {
+    height: 1.2vw;
+    width: 1.2vw !important;
+    position: relative;
+    margin: 0 !important;
+    top: auto !important;
+}
+
+.editor :global(.ql-toolbar.ql-snow .ql-formats) {
+    margin-right: 0.9375vw;
+    height: 1.7500000000000002vw;
+}
+
+.editor :global(.ql-snow.ql-toolbar button) {
+    border: 0.0625vw solid var(--border-color);
+    margin-right: .5vw;
+    margin-bottom: 1vw;
+    height: 1.7500000000000002vw;
+    width: 1.5vw;
+    padding: 0.1875vw 0.3125vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mediaButtons {
+    display: flex;
+    gap: 1.25vw;
+    width: 100%;
+    padding: 0 1.25vw 0 1.125vw;
+    /* margin-top: 2.625vw; */
+    margin: 1.125vw 0;
+}
+
+.mediaButton {
+    background: var(--lite-white-menu-sider-active);
+    border: 0.0625vw solid var(--border-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4.425vw;
+    height: 3.75vw;
+    min-width: 4.425vw;
+    min-height: 3.75vw;
+}
+
+.mediaButton:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-0.1vw);
+}
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.imagePreview {
+    width: 4.425vw;
+    height: 3.75vw;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.deleteButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imageWrapper:hover .deleteButton {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 54.1vw;
+        max-width: 61.25vw;
+        padding-top: 2.5vw;
+        padding-bottom: 3.6vw;
+    }
+
+    .width1000 {
+        width: 90.6vw;
+        max-width: 91.25vw;
+    }
+
+    .container h2 {
+        font-size: 1.1vw;
+        padding: 0 1.6vw 1.4vw 1.5vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .formGroup {
+        padding: 0 1.6vw 0 1.5vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .label {
+        font-size: 1.1vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .input {
+        height: 3vw;
+        font-size: 1.1vw;
+    }
+
+    .input::placeholder {
+        font-size: 1.1vw;
+    }
+
+    .input:focus {
+        border-color: var(--primary-border-input);
+    }
+
+    .container input[type="date"] {
+        font-size: 1vw;
+        padding: 1.1vw 0 1.05vw 1.2vw;
+    }
+
+    .editorContainer {
+        padding: 0 1.6vw 0 1.5vw;
+        margin-bottom: 1.4vw;
+    }
+
+    .editor :global(.ql-toolbar.ql-snow) {
+        background: var(--lite-white-menu-sider-active);
+    }
+
+    .editor :global(.ql-toolbar button) {
+        font-size: 1.1vw;
+    }
+
+    .editor :global(.ql-container.ql-snow) {
+        min-height: 16vw;
+        max-height: 30vw;
+        height: 30vw;
+    }
+
+    .editor :global(.ql-editor) {
+        font-size: 1.1vw;
+    }
+
+    .editor :global(.ql-stroke) {
+        stroke: #ffffff;
+        border: 0.1vw solid var(--primary-border-input);
+    }
+
+    .editor :global(.ql-fill) {
+        fill: #ffffff;
+    }
+
+    .editor :global(.ql-picker-label) {
+        font-size: 1.1vw;
+    }
+
+    .editor :global(.ql-picker-options) {
+        background: #1a2c4e;
+        font-size: 1.1vw;
+    }
+
+    .editor :global(.ql-snow .ql-picker-label) {
+        height: 2.3vw;
+        width: 7vw;
+        padding: 0.25vw 0.4vw;
+    }
+
+    .editor :global(.ql-snow .ql-picker.ql-header) {
+        width: 7vw;
+    }
+
+    .editor :global(.ql-align .ql-picker-label) {
+        width: max-content;
+    }
+
+    .editor :global(.ql-editor p) {
+        font-size: 1.1vw;
+    }
+
+    .editor :global(.ql-snow .ql-picker-label svg) {
+        height: 1.4vw;
+        width: 1.4vw;
+    }
+
+    .editor :global(.ql-toolbar.ql-snow .ql-formats) {
+        margin-right: 1.2vw;
+    }
+
+    .editor :global(.ql-snow.ql-toolbar button) {
+        height: 2.3vw;
+        width: 1.7vw;
+        padding: 0.25vw 0.4vw;
+    }
+
+    .mediaButtons {
+        gap: 1.6vw;
+        padding: 0 1.6vw 0 1.5vw;
+    }
+
+    .mediaButton {
+        width: 7vw;
+        height: 6vw;
+        min-width: 7vw;
+        min-height: 6vw;
+    }
+
+    .imagePreview {
+        width: 7vw;
+        height: 6vw;
+    }
+
+    .deleteButton {
+        width: 2.3vw;
+        height: 2.3vw;
+        font-size: 1.2vw;
+    }
+}

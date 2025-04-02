@@ -1,0 +1,202 @@
+.rightSidePickerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 20.625vw;
+    gap: 0.6875vw;
+    max-width: 20.625vw;
+    flex: 1;
+    /* border-radius: var(--primary-border-radius);
+      */
+}
+
+.addProductClass {
+    flex-direction: row;
+    width: max-content;
+    max-width: max-content;
+}
+
+.addProject {
+    width: 100%;
+    flex: none;
+    height: max-content;
+}
+
+.selectContainer {
+    min-width: 19.7vw;
+    border-radius: var(--primary-border-radius);
+
+}
+
+.pickerInputWidth {
+    width: 41.0375vw;
+}
+
+.selectContainer {
+    position: relative;
+    height: 8.3125vw;
+    padding: 1.7500000000000002vw 1.25vw 2.75vw 1.5vw;
+    background: var(--secondary-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.widthAdjust {
+    max-width: 19.9375vw;
+}
+
+.selectContainer label {
+    margin-bottom: 1.0625vw;
+    font-size: var(--font-size-primary);
+    color: var(--label-color);
+}
+
+.customSelect {
+    position: relative;
+    width: 100%;
+}
+
+.selectControl {
+    width: 100%;
+    height: 2.125vw;
+    padding: 0 1.25vw;
+    background: transparent;
+    border: 0.0625vw solid var(--border-color);
+    color: var(--label-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 0.8125vw;
+    border-radius: var(--primary-border-radius);
+}
+
+.placeholder {
+    color: var(--primary-placeholde-color);
+}
+
+.value {
+    color: var(--label-color);
+}
+
+.arrow {
+    font-size: 0.7vw;
+    transition: transform 0.2s ease;
+    color: var(--label-color);
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+}
+
+.optionsList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--secondary-bg);
+    border: 0.0625vw solid var(--border-color);
+    z-index: 1000;
+    max-height: 12.5vw;
+    overflow-y: auto;
+}
+
+.option {
+    padding: 0.625vw 1.25vw;
+    color: var(--label-color);
+    font-size: 0.8125vw;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.option:hover {
+    background-color: var(--hover-secondary);
+}
+
+.input {
+    width: 100%;
+    height: 2.125vw;
+    padding: 0.8125vw 1.25vw;
+    background: transparent;
+    border: 0.0625vw solid var(--border-color);
+    color: var(--label-color);
+    font-size: 0.8125vw;
+    border-radius: var(--primary-border-radius);
+}
+
+.input::placeholder {
+    color: var(--primary-placeholde-color);
+    font-size: var(--font-size-primary);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-border-input);
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #131217 inset !important;
+    -webkit-text-fill-color: #fff;
+}
+
+
+/* Add these styles to your RightSidePicker.module.css */
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--primary-border-radius);
+    margin-top: 1.0625vw;
+    max-height: 12.5vw;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown::-webkit-scrollbar {
+    width: .5vw;
+    border-radius: 1vw;
+    background-color: var(--primary-bg);
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.dropdownItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5vw 0.75vw;
+    border-bottom: 0.0625vw solid var(--border-color);
+    font-size: var(--font-size-primary);
+    color: var(--label-color);
+}
+
+.dropdownItem:last-child {
+    border-bottom: none;
+}
+
+.removeButton {
+    background: none;
+    border: none;
+    color: var(--label-color);
+    cursor: pointer;
+    font-size: var(--font-size-primary);
+    padding: 0 0.25vw;
+}
+
+.removeButton:hover {
+    color: #ff4444;
+}
+
+.selectContainer {
+    position: relative;
+}

@@ -1,0 +1,218 @@
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+    background-color: var(--hover-secondary);
+    background-color: var(--secondary-bg);
+    padding: 1vw;
+    margin-top: 1vw;
+    border-radius: var(--primary-border-radius);
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #ffffff;
+
+}
+
+.table th {
+    padding: 0.75vw 1vw;
+    font-size: 0.8125vw;
+    text-align: left;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid var(--hover-secondary);
+    font-size: 0.8125vw;
+    color: var(--text-sider-heading);
+}
+
+.table th:hover {
+    background-color: var(--hover-secondary);
+}
+
+.table td {
+    font-size: 0.8125vw;
+    color: var(--text-sider-heading);
+    padding: 0.75vw 1vw;
+    border-bottom: 1px solid var(--hover-secondary);
+}
+
+.sortIcon {
+    margin-left: 0.5vw;
+    font-size: 0.8125vw;
+    color: #666;
+}
+
+.specifications {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+}
+
+.specItem {
+    background-color: #2a2a2a;
+    padding: 0.25vw 0.5vw;
+    font-size: 0.8125vw;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.actionButton {
+    padding: 0.375vw 0.55vw;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8125vw;
+    transition: background-color 0.2s;
+}
+
+.editButton {
+    background-color: var(--primary-button-color);
+    color: white;
+}
+
+.editButton:hover {
+    background-color: rgba(38, 50, 222, .8);
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #bd2130;
+}
+
+/* Row hover effect */
+.table tbody tr:hover {
+    background-color: var(--hover-secondary);
+}
+
+.loading {
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 1vw;
+    background: var(--secondary-bg);
+}
+
+.pagination span {
+    font-size: var(--font-size-primary);
+}
+
+.paginationButton {
+    padding: 0.5vw 1.2vw;
+    border: 0.08vw solid var(--border-color);
+    cursor: pointer;
+    font-size: var(--font-size-primary);
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-button-color);
+    color: white;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.paginationButton:hover {
+    background-color: var(--primary-hover);
+}
+
+
+.paginationButton.disabled,
+.paginationButton:disabled {
+    background-color: var(--lite-white-menu-sider-active) !important;
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+}
+
+.select {
+    padding: 0.5vw 1vw;
+    font-size: var(--font-size-primary);
+    border: none;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-button-color);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.select:hover {
+    background-color: var(--lite-white-menu-sider-active);
+}
+
+.select:focus {
+    background-color: var(--lite-white-menu-sider-active);
+    box-shadow: 0 0 0.2vw rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.select:disabled {
+    background-color: var(--lite-white-menu-sider-active);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.select::-ms-expand {
+    display: none;
+}
+
+.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path fill='white' d='M2 0L0 2h4z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.5vw center;
+    background-size: 0.5vw;
+    padding-right: 1.5vw;
+    padding-left: -1vw;
+}
+
+.architectCell {
+    display: flex;
+    flex-direction: column;
+    gap: .25vw;
+}
+
+.showMoreButton {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 0.3125vw;
+    font-size: 0.75vw;
+    display: flex;
+}
+
+.architectItem {
+    font-size: 0.8125vw;
+}
+
+
+@media (max-width: 1024px) {
+    .specifications {
+        flex-direction: column;
+        gap: 0.25vw;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 0.25vw;
+    }
+
+    .actionButton {
+        width: 100%;
+    }
+}

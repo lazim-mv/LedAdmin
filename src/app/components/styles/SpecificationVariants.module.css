@@ -1,0 +1,156 @@
+.specContainer {
+    border-radius: 0.5vw;
+    padding: 1.25vw;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1.0625vw;
+    width: 100%;
+    max-height: 56.25vw;
+    overflow-y: scroll;
+}
+
+.specContainer::-webkit-scrollbar {
+    width: 0.375vw;
+    border-radius: 0.5vw;
+    background-color: var(--primary-bg);
+}
+
+.specContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5vw;
+    transition: background-color 0.3s ease;
+}
+
+.specContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.specContainer::-webkit-scrollbar-track {
+    background-color: var(--primary-bg);
+    border-radius: 0.5vw;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.0625vw;
+}
+
+.header .label {
+    color: var(--label-color);
+    font-size: var(--font-size-primary);
+}
+
+.addButton {
+    /* background-color: #052E60; */
+    background: var(--primary-button-color);
+    color: white;
+    border: none;
+    border-radius: 1.875vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    font-size: 1.25vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+    opacity: .8;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75vw;
+}
+
+.specMainContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.75vw;
+}
+
+.specRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.125vw;
+    width: 50%;
+}
+
+.reactIcon {
+    font-size: 1.25vw;
+    color: var(--delete-icon);
+    cursor: pointer;
+}
+
+.reactIcon:hover {
+    opacity: .8;
+}
+
+.specInput {
+    width: 100%;
+    height: 2.125vw;
+    padding: 0.8125vw 0 0.75vw 1.25vw;
+    background: transparent;
+    border: 0.0625vw solid var(--border-color);
+    color: rgba(255, 255, 255, .8);
+    font-size: 0.8750000000000001vw;
+    border-radius: var(--primary-border-radius);
+}
+
+.specInput::placeholder {
+    color: var(--primary-placeholde-color);
+    font-size: 0.8750000000000001vw;
+}
+
+.specInput:focus {
+    outline: none;
+    border-color: var(--primary-border-input);
+}
+
+.specInput:-webkit-autofill,
+.specInput:-webkit-autofill:hover,
+.specInput:-webkit-autofill:focus,
+.specInput:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #131217 inset !important;
+    -webkit-text-fill-color: #fff;
+}
+
+.searchContainer {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.searchIcon {
+    position: absolute;
+    top: .6vw;
+    left: .5vw;
+    color: #888;
+    font-size: 18px;
+}
+
+.searchInput {
+    width: 95.2%;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .specInput {
+        height: 2.7vw;
+        padding: 1.1vw 0 1vw 1.6vw;
+        font-size: 1.4vw;
+    }
+
+    .specInput::placeholder {
+        font-size: 1.4vw;
+    }
+}

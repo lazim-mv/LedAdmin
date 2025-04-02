@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+  --fontFamily: "Poppins", serif;
+  /* --primary-bg: #091A3A; */
+  --primary-bg: #000000;
+  --secondary-bg: #112240;
+  --text-primary: #ccd6f6;
+  --text-sider-heading: rgba(228, 228, 228, .9);
+  --text-secondary: #8B97B2;
+  --accent-blue: #0D99FF;
+
+  --label-color: #c9c8cc;
+  --border-color: #252429;
+
+  --hover-color: #0056b3;
+  --hover-secondary: #252429;
+
+  --delete-icon: #D33F49;
+
+
+  --lite-white-menu-sider-active: #252429;
+
+  --primary-button-color: #2632de;
+  --secondary-bg: #131217;
+  --box-shadow-primary: 4px 4px 8px rgba(0, 0, 0, .2), -1px -1px 6px rgba(255, 255, 255, 0.3);
+  --box-shadow-primary: 2px 2px 4px rgba(0, 0, 0, .2), -1px -1px 3px rgba(255, 255, 255, 0.3);
+  --box-shadow-secondary: -4px -4px 8px rgba(0, 0, 0, .2), 1px 1px 6px rgba(255, 255, 255, 0.3);
+
+  --box-shadow-surround: 4px 4px 8px rgba(0, 0, 0, 0.2),
+    -4px -4px 8px rgba(0, 0, 0, 0.2),
+    4px -4px 8px rgba(0, 0, 0, 0.2),
+    -4px 4px 8px rgba(0, 0, 0, 0.2),
+    1px 1px 6px rgba(255, 255, 255, 0.15),
+    -1px -1px 6px rgba(255, 255, 255, 0.15),
+    1px -1px 6px rgba(255, 255, 255, 0.15),
+    -1px 1px 6px rgba(255, 255, 255, 0.15);
+
+
+  --primary-placeholde-color: rgba(255, 255, 255, .4);
+  --primary-border-input: #403e3e;
+  --font-size-primary: 0.8750000000000001vw;
+  --primary-border-radius: 0.25vw;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--label-color);
+  background: var(--primary-bg) !important;
+  font-family: var(--fontFamily);
+}
+
+body::-webkit-scrollbar {
+  width: 0rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+
+a {
+  text-decoration: none;
+  font-family: var(--fontFamily);
+  font-size: 0.8125vw;
+}
+
+label {
+  line-height: 0.625vw;
+  font-weight: 500;
+  color: var(--label-color);
+}
+
+.appContainer {
+  /* display: flex; */
+  min-height: max-content;
+  max-width: 85%;
+  width: 100%;
+  margin-bottom: 1.0625vw;
+}
+
+.appMain {
+  padding: 0 0.75vw 0.8125vw 1.125vw;
+  background: var(--primary-bg);
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .appContainer {
+    margin-bottom: 2.22vw;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .appMain {
+    padding: 0 1.56vw 1.88vw 2.34vw;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  a {
+    font-size: 1.69vw;
+  }
+
+  label {
+    line-height: 1.3vw;
+  }
+}
