@@ -83,7 +83,7 @@ const ResetPasswordPage = () => {
             <div className={styles.loginForm}>
                 <div className={styles.formGroup}>
                     <div className={styles.textContainer}>
-                        <h1>Reset Password</h1>
+                        <h1>Change Password</h1>
                     </div>
                     <label className={styles.label}>Email</label>
                     <input
@@ -130,7 +130,7 @@ const ResetPasswordPage = () => {
                 </div>
                 {error && <div className={styles.errorMessage}>{error}</div>}
                 <button type="button" onClick={handleResetPassword} className={styles.submitButton}>
-                    Reset Password
+                    Change Password
                 </button>
                 <a className={styles.resetPassword} href="/login">Go back and login</a>
 
